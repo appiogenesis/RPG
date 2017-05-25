@@ -31,7 +31,7 @@ public class RPG {
     }
     @Mod.EventHandler
     public void postInit(FMLPreInitializationEvent e){
-	    proxy.prostInit(e);
+	    proxy.postInit(e);
     }
 
 }
