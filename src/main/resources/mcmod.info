@@ -1,0 +1,16 @@
+[
+{
+  "modid": "rpg",
+  "name": "RPG",
+  "description": "An RPG mod in similar style to Wynncraft",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["blupilot", "Salzimus"],
+  "credits": "Thanks to the forge team for making forge, and thanks to the MMD Discord for helping",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
