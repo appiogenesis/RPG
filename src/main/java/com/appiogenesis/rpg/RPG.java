@@ -26,12 +26,12 @@ public class RPG {
         proxy.preInit(e);
     }
     @Mod.EventHandler
-    public void init(FMLPreInitializationEvent e){
-	    proxy.init(e);
+    public void init(FMLInitializationEvent e){
+	    //proxy.init(e);
     }
     @Mod.EventHandler
-    public void postInit(FMLPreInitializationEvent e){
-	    proxy.postInit(e);
+    public void postInit(FMLPostInitializationEvent e){
+	    //proxy.postInit(e);
     }
 
 }
