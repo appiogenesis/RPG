@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "rpg:blocks/blocktexture",
+    "down": "rpg:blocks/blocktexture",
+    "up": "rpg:blocks/blocktexture",
+    "east": "rpg:blocks/blocktexture",
+    "west": "rpg:blocks/blocktexture",
+    "north": "rpg:blocks/datablocktexture",
+    "south": "rpg:blocks/blocktexture"
+  }
+}
