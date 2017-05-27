@@ -1,4 +1,4 @@
-package com.appiogenesis.rpg.block; // Fog: OFF
+package com.appiogenesis.rpg.block;
 
 import com.appiogenesis.rpg.RPG;
 import com.appiogenesis.rpg.tileentity.DataTileEntity;
