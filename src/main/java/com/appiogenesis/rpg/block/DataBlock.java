@@ -43,7 +43,10 @@ public class DataBlock extends Block implements ITileEntityProvider {
 
 	@SideOnly(Side.CLIENT)
 	public void initModel() {
-		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(
+				Item.getItemFromBlock(this),
+				0,
+				new ModelResourceLocation(getRegistryName(), "inventory"));
 	}
 
 	@Override
@@ -56,7 +59,18 @@ public class DataBlock extends Block implements ITileEntityProvider {
 	}
 
 	@Override
-	public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ) {
+	public boolean onBlockActivated(
+			World world,
+			BlockPos pos,
+			IBlockState state,
+			EntityPlayer player,
+			EnumHand hand,
+			ItemStack heldItem,
+			EnumFacing side,
+			float hitX,
+			float hitY,
+			float hitZ)
+	{
 		if (!world.isRemote) {
 			if (side == state.getValue(FACING)) {
 				int counter;
@@ -73,7 +87,12 @@ public class DataBlock extends Block implements ITileEntityProvider {
 	}
 
 	@Override
-	public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
+	public void onBlockPlacedBy(
+			World world,
+			BlockPos pos,
+			IBlockState state,
+			EntityLivingBase placer,
+			ItemStack stack) {
 		world.setBlockState(pos, state.withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
 	}
 

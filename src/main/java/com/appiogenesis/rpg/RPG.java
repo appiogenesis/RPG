@@ -7,7 +7,12 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 
-@Mod(modid = RPG.modId, name = RPG.name, version = RPG.version, acceptedMinecraftVersions = "[1.10.2]")
+@Mod(
+        modid = RPG.modId,
+        name = RPG.name,
+        version = RPG.version,
+        acceptedMinecraftVersions = "[1.10.2]"
+)
 public class RPG {
 
     public static final String modId = "rpg";
@@ -17,7 +22,9 @@ public class RPG {
     @Mod.Instance(modId)
     public static RPG instance;
 
-    @SidedProxy(serverSide = "com.appiogenesis.rpg.proxy.CommonProxy", clientSide = "com.appiogenesis.rpg.proxy.ClientProxy")
+    @SidedProxy(
+            serverSide = "com.appiogenesis.rpg.proxy.CommonProxy",
+            clientSide = "com.appiogenesis.rpg.proxy.ClientProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler
